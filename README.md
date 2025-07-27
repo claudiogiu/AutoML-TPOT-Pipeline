@@ -6,7 +6,7 @@ This repository is designed for implementing an AutoML pipeline via TPOT. The pi
 
 The dataset used for evolution and training is publicly available at [this link](https://www.muratkoklu.com/datasets/).  
 
-TPOT applies genetic programming to automate the development of machine learning pipelines. By mimicking natural selection, it progressively discovers and fine-tunes combinations of learning algorithms and feature construction techniques that yield optimal performance for a given predictive task.
+TPOT adopts evolutionary algorithms to automate the search and optimization of machine learning pipelines. Through a genetic programming approach, it iteratively evaluates, selects, and refines combinations of estimators and feature transformation steps to maximize predictive performance on a given task.
 
 ## Getting Started 
 
@@ -43,8 +43,8 @@ To set up the repository properly, follow these steps:
    
    - This command sequentially runs the following modules:
      - `load_data.py`: Ingests the data.
-     - `preprocess.py`: Orchestrates data preparation for pipeline initialization.   
-     - `train_pipeline.py`: Utilizes TPOT while restricting the search space of preprocessing and model estimators using the configuration file `config.json` and saves the highest-performing pipeline setup to the `models/` directory.  
+     - `preprocess.py`: Handles data preparation for pipeline initialization.   
+     - `train_pipeline.py`: Utilizes TPOT, with the search space of data transformation steps and estimators constrained by the `config.json` file, and saves the highest-performing pipeline setup to the `models/` directory.  
      - `evaluate_pipeline.py`: Computes evaluation metrics to assess pipeline performance on the held-out test set. 
 
 
