@@ -27,7 +27,7 @@ class TPOTModelTrainer:
             Automatically maps two distinct target classes to binary labels (0 and 1).
 
         train(X: pd.DataFrame, y: pd.Series or pd.DataFrame) -> None:
-            Loads config, maps labels, trains TPOT, and saves the best pipeline.
+            Loads config, maps labels, and trains TPOT.
 
         save_pipeline() -> None:
             Serializes and saves the best-performing pipeline to the output path.
