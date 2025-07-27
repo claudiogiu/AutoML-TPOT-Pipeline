@@ -38,7 +38,6 @@ class TPOTModelTrainer:
         self.config: Dict = {}
         self.tpot: Union[TPOTClassifier, None] = None
 
-
     def load_config(self) -> Dict:
         if not os.path.exists(self.config_path):
             raise FileNotFoundError(f"[Training] Configuration file not found at: {self.config_path}")
