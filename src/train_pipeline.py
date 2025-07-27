@@ -28,6 +28,9 @@ class TPOTModelTrainer:
 
         train(X: pd.DataFrame, y: pd.Series or pd.DataFrame) -> None:
             Loads config, maps labels, trains TPOT, and saves the best pipeline.
+
+        save_pipeline() -> None:
+            Serializes and saves the best-performing pipeline to the output path.
     """
 
     def __init__(self, output_folder: str = "models", filename: str = "tpot_best_pipeline.joblib") -> None:
