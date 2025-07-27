@@ -1,0 +1,25 @@
+{
+  "sklearn.preprocessing.StandardScaler": {},
+  "sklearn.preprocessing.MinMaxScaler": {},
+  "sklearn.decomposition.PCA": {
+    "n_components": [5, 10, 15]
+  },
+  "sklearn.ensemble.RandomForestClassifier": {
+    "n_estimators": [100, 200],
+    "max_depth": [5, null],
+    "min_samples_split": [2, 5]
+  },
+  "sklearn.svm.SVC": {
+    "C": [0.1, 1, 10],
+    "kernel": ["linear", "rbf"]
+  },
+  "sklearn.linear_model.LogisticRegression": {
+    "C": [0.1, 1, 10],
+    "penalty": ["l1", "l2"],
+    "solver": ["liblinear"]
+  },
+  "sklearn.neighbors.KNeighborsClassifier": {
+    "n_neighbors": [3, 5, 7],
+    "weights": ["uniform", "distance"]
+  }
+}
