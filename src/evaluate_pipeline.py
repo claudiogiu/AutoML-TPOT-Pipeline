@@ -15,7 +15,6 @@ class TPOTModelEvaluator:
     Attributes:
         model_dir (str): Path to the directory containing the serialized pipeline (.joblib file).
         pipeline (object): Loaded pipeline instance used for predictions.
-        metrics_history (dict): Dictionary that stores evaluation metrics collected across multiple runs.
 
     Methods:
         load_pipeline() -> None:
