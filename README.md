@@ -2,9 +2,9 @@
 
 ## Introduction  
 
-This repository is designed for implementing an AutoML pipeline via TPOT. The pipeline is evolved and trained on a dataset sourced from the research conducted by KOKLU M., SARIGIL S., and OZBEK O. (2021) in their paper *The use of machine learning methods in classification of pumpkin seeds (Cucurbita pepo L.)* (Genetic Resources and Crop Evolution, 68(7), 2713-2726, DOI: [10.1007/s10722-021-01226-0](https://doi.org/10.1007/s10722-021-01226-0)).  
+This repository is designed for implementing an AutoML pipeline via TPOT. The pipeline is trained on a dataset sourced from the research conducted by KOKLU M., SARIGIL S., and OZBEK O. (2021) in their paper *The use of machine learning methods in classification of pumpkin seeds (Cucurbita pepo L.)* (Genetic Resources and Crop Evolution, 68(7), 2713-2726, DOI: [10.1007/s10722-021-01226-0](https://doi.org/10.1007/s10722-021-01226-0)).  
 
-The dataset used for evolution and training is publicly available at [this link](https://www.muratkoklu.com/datasets/).  
+The dataset used for training is publicly available at [this link](https://www.muratkoklu.com/datasets/).  
 
 TPOT adopts evolutionary algorithms to automate the search and optimization of machine learning pipelines. Through a genetic programming approach, it iteratively evaluates, selects, and refines combinations of estimators and feature transformation steps to maximize predictive performance on a given task.
 
