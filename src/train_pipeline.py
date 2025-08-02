@@ -5,6 +5,7 @@ from joblib import dump
 from load_data import load_data
 from typing import Union, Dict
 import warnings
+from sklearn.model_selection import RepeatedStratifiedKFold
 from tpot import TPOTClassifier
 
 warnings.filterwarnings("ignore")
@@ -69,10 +70,11 @@ class TPOTModelTrainer:
     def train(self, X: pd.DataFrame, y: Union[pd.Series, pd.DataFrame]) -> None:
         self.load_config()
         y_mapped = self.map_labels(y)
+        cv_repeated_stratified_kfold = RepeatedStratifiedKFold(n_splits=5, n_repeats=20, random_state=42)
 
         self.tpot = TPOTClassifier(
             config_dict=self.config,
-            cv=5,
+            cv=cv_repeated_stratified_kfold,
             scoring="accuracy",
             generations=3,
             population_size=20,

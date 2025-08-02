@@ -2,15 +2,22 @@
   "sklearn.preprocessing.StandardScaler": {},
   "sklearn.preprocessing.MinMaxScaler": {},
   "sklearn.decomposition.PCA": {
-    "n_components": [5, 10, 15]
+    "n_components": [3, 5, 8, 10]
+  },
+  "sklearn.feature_selection.SelectKBest": {
+    "k": [3, 5, 8, 10]
+  },
+  "sklearn.feature_selection.VarianceThreshold": {
+    "threshold": [0.0, 0.005, 0.01, 0.02]
   },
   "sklearn.ensemble.RandomForestClassifier": {
-    "n_estimators": [100, 200],
-    "max_depth": [5, null],
-    "min_samples_split": [2, 5]
+    "n_estimators": [11, 21, 31, 41, 51],
+    "max_depth": [5, 10, 15, 20],
+    "min_samples_split": [2, 5, 10],
+    "min_samples_leaf": [1, 2, 5]
   },
   "sklearn.svm.SVC": {
-    "C": [0.1, 1, 10],
+    "C": [0.01, 0.1, 1, 10],
     "kernel": ["linear", "rbf"]
   },
   "sklearn.linear_model.LogisticRegression": {
@@ -19,7 +26,8 @@
     "solver": ["liblinear"]
   },
   "sklearn.neighbors.KNeighborsClassifier": {
-    "n_neighbors": [3, 5, 7],
+    "n_neighbors": [3, 5, 7, 9, 11],
+    "metric": ["euclidean", "cosine", "manhattan"],
     "weights": ["uniform", "distance"]
   }
 }
